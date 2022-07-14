@@ -11,7 +11,6 @@ class MyInfo {
         case male
         case female
     }
-    
     var genderType: GenderType // private var genderType: GenderType도 가능
                                // 이건 Class 안에서만 사용 가능하다.
                                // var genderType = GenderType.male 도 가능.
@@ -79,11 +78,9 @@ class GameInfo {
     var awayScore = 0
     func presentScore() -> String { // description은 문자열 표시할 때 사용 (String)
                                     // final func으로 작성하면 override가 불가능하다.
-        return homeScore.description + " : " + awayScore.description
+    return homeScore.description + " : " + awayScore.description
     }
 }
-
-
 
 class Soccer: GameInfo{ //부모가 가진 GameInfo 내용을 가져다가 사용할 수 있다.
     var time = 0        // 더 필요한 것들은 추가할 수 있다.
