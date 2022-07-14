@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyIDViewController" customModule="Setting_Clone_App" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="6Do-GO-Lyg" id="XXc-Jl-yW2"/>
+                <outlet property="emailTextField" destination="C48-Du-Q5l" id="Qh6-8s-9f5"/>
+                <outlet property="nextButton" destination="0re-LC-Oao" id="fD6-I3-CiP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Do-GO-Lyg">
+                    <rect key="frame" x="20" y="64" width="68.5" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                    <connections>
+                        <action selector="doCancel:" destination="-1" eventType="touchUpInside" id="cv1-Gi-LvQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0re-LC-Oao">
+                    <rect key="frame" x="340" y="64" width="54" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIz-VU-S36">
+                    <rect key="frame" x="141.5" y="124" width="131.5" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with your Apple ID to use iCloud and other Apple services" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1r-xb-hDP">
+                    <rect key="frame" x="20" y="187" width="374" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C48-Du-Q5l">
+                    <rect key="frame" x="94.5" y="278" width="34.5" height="18.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9M2-Nt-5kQ">
+                    <rect key="frame" x="0.0" y="306.5" width="414" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="I5q-cc-dcM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpG-VG-sf1">
+                    <rect key="frame" x="0.0" y="267" width="414" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="4mp-nL-dsL"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oD-q4-KKA">
+                    <rect key="frame" x="20" y="277" width="64.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tO-Mt-joY">
+                    <rect key="frame" x="82" y="337.5" width="250.5" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Don't have an Apple ID or forgot it?"/>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="H4v-xZ-NCk">
+                    <rect key="frame" x="87" y="408.5" width="240" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icloud.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DsH-EC-xt5">
+                            <rect key="frame" x="0.0" y="0.5" width="40" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="DsH-EC-xt5" secondAttribute="height" multiplier="5:5" id="dIM-Bt-cFE"/>
+                                <constraint firstAttribute="height" constant="40" id="uig-1G-NB7"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QVs-UR-k1e">
+                            <rect key="frame" x="50" y="3.5" width="40" height="32.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="QVs-UR-k1e" secondAttribute="height" multiplier="23:20" id="UPZ-2b-1Us"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="externaldrive.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="v3N-eu-vtf">
+                            <rect key="frame" x="100" y="4.5" width="40" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="v3N-eu-vtf" secondAttribute="height" multiplier="23:20" id="3Ds-kQ-Y5Q"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark.folder.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sjf-O2-cGs">
+                            <rect key="frame" x="150" y="3.5" width="40" height="32.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="sjf-O2-cGs" secondAttribute="height" multiplier="23:20" id="xd2-jZ-W4b"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.dashed.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vNJ-gg-rRp">
+                            <rect key="frame" x="200" y="3" width="40" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="vNJ-gg-rRp" secondAttribute="height" multiplier="23:20" id="1FJ-wi-h0v"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="y1r-xb-hDP" secondAttribute="trailing" constant="20" id="0Mz-E4-DLX"/>
+                <constraint firstItem="H4v-xZ-NCk" firstAttribute="top" secondItem="4tO-Mt-joY" secondAttribute="bottom" constant="40" id="3pW-OR-f8S"/>
+                <constraint firstItem="dIz-VU-S36" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="5y2-bC-tni"/>
+                <constraint firstItem="H4v-xZ-NCk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8Xt-dG-Exe"/>
+                <constraint firstAttribute="trailing" secondItem="9M2-Nt-5kQ" secondAttribute="trailing" id="GeY-ss-rfP"/>
+                <constraint firstItem="9M2-Nt-5kQ" firstAttribute="top" secondItem="C48-Du-Q5l" secondAttribute="bottom" constant="10" id="Ijk-Gf-FqY"/>
+                <constraint firstItem="4tO-Mt-joY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MDJ-fk-kxC"/>
+                <constraint firstItem="C48-Du-Q5l" firstAttribute="top" secondItem="y1r-xb-hDP" secondAttribute="bottom" constant="50" id="ROa-Eg-zYM"/>
+                <constraint firstItem="YpG-VG-sf1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U4S-EQ-Q34"/>
+                <constraint firstItem="C48-Du-Q5l" firstAttribute="leading" secondItem="2oD-q4-KKA" secondAttribute="trailing" constant="10" id="WZk-AN-aNP"/>
+                <constraint firstItem="9M2-Nt-5kQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Y8C-KV-MEf"/>
+                <constraint firstItem="dIz-VU-S36" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Zkt-39-lkD"/>
+                <constraint firstItem="2oD-q4-KKA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="eTe-aE-GwM"/>
+                <constraint firstItem="6Do-GO-Lyg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="g4z-vR-6iZ"/>
+                <constraint firstItem="y1r-xb-hDP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ixW-xX-JIa"/>
+                <constraint firstItem="C48-Du-Q5l" firstAttribute="centerY" secondItem="2oD-q4-KKA" secondAttribute="centerY" id="kjz-zf-NaY"/>
+                <constraint firstAttribute="trailing" secondItem="YpG-VG-sf1" secondAttribute="trailing" id="kzn-fe-MBR"/>
+                <constraint firstItem="C48-Du-Q5l" firstAttribute="top" secondItem="YpG-VG-sf1" secondAttribute="bottom" constant="10" id="nhC-3p-Ng5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0re-LC-Oao" secondAttribute="trailing" constant="20" id="sH9-kG-ssQ"/>
+                <constraint firstItem="6Do-GO-Lyg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="u79-XF-3kW"/>
+                <constraint firstItem="0re-LC-Oao" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="uLM-lp-Q21"/>
+                <constraint firstItem="4tO-Mt-joY" firstAttribute="top" secondItem="9M2-Nt-5kQ" secondAttribute="bottom" constant="30" id="x1I-ad-uKo"/>
+                <constraint firstItem="y1r-xb-hDP" firstAttribute="top" secondItem="dIz-VU-S36" secondAttribute="bottom" constant="20" id="ycK-kF-AKT"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="55.580357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="externaldrive.fill" catalog="system" width="128" height="87"/>
+        <image name="face.dashed.fill" catalog="system" width="128" height="121"/>
+        <image name="icloud.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="questionmark.folder.fill" catalog="system" width="128" height="97"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
